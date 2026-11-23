@@ -1,0 +1,9 @@
+<h1>Sistema de bodegas y productos</h1>
+
+<app-bodega-form (registrada)="cargarBodegas()" />
+
+@if (error) {
+  <p>{{ error }}</p>
+}
+
+<app-bodega-tabla [bodegas]="bodegas" />
